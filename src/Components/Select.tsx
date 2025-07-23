@@ -3,7 +3,6 @@ import React from 'react';
 function Select(props:any){
   return (
     <div>
-      <p>Escolha um dia da semana</p>
        <select value={props.value} onChange={e=>props.setDiaSemana(e.target.value)} >
         <option value=''>Escolha um dia da semana!</option>;
         <option value='Domingo'>Domingo</option>;
@@ -14,7 +13,6 @@ function Select(props:any){
         <option value='Sexta'>Sexta-feira</option>;
         <option value='Sabado'>Sabado</option>;
       </select>
-
     </div>
   );
 };
